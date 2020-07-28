@@ -27,10 +27,5 @@ namespace SuperMemoAssistant.Plugins.MouseoverDofAandDS
       return string.IsNullOrEmpty(str);
     }
 
-
-
-
-
-
   }
 }

@@ -85,7 +85,6 @@ namespace SuperMemoAssistant.Plugins.MouseoverDofAandDS
         return null;
 
       var titleNode = contentNode.SelectSingleNode("//h1");
-
       if (titleNode.IsNull())
         return null;
 
@@ -99,7 +98,6 @@ namespace SuperMemoAssistant.Plugins.MouseoverDofAandDS
         cur = cur.NextSibling;
       }
 
-
       string html = @"
           <html>
             <body>
@@ -111,7 +109,7 @@ namespace SuperMemoAssistant.Plugins.MouseoverDofAandDS
 
       var refs = new References();
       refs.Title = titleNode.InnerText;
-      refs.Source = "Free Online Dictionary of Computing";
+      refs.Source = "Dictionary of Algorithms and Data Structures";
       refs.Link = url;
 
       return new PopupContent(refs, html, true, browserQuery: url);
